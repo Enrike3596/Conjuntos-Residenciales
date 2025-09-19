@@ -18,7 +18,8 @@ select * from roles;
 
 CREATE TABLE users (
     user_id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(150) NOT NULL,
+    names VARCHAR(150) NOT NULL,
+    surnames VARCHAR(150) NOT NULL,
     phone VARCHAR(20),
     email VARCHAR(150) UNIQUE,
     doc_type VARCHAR(20),
@@ -26,9 +27,11 @@ CREATE TABLE users (
     status ENUM('Active','Inactive') DEFAULT 'Active',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    role_id BIGINT NOT NULL,
-    FOREIGN KEY (role_id) REFERENCES roles(role_id)
+    role_user BIGINT NOT NULL,
+    Clave_hash VARCHAR(255) NOT NULL,
+    FOREIGN KEY (role_user) REFERENCES roles(role_id)
 );
+
 select * from users;
 
 CREATE TABLE owners (
