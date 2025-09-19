@@ -1,351 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIGRADO</title>
-    <link rel="icon" href="./Views/Img/lOGO-BIGRADO_AZUL.png" type="image/x-icon">
-    <link rel="stylesheet" href="./Views/Css/landing-page.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conjunto Residencial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <nav class="navbar">
-            
-            <a href="./index.html" class="navbar-logo"><img src="./Views/Img/lOGO-BIGRADO_AZUL.png" alt="Logo de BIGRADO" height="40" width="40">BIGRADO</a>
-            <div class="navbar-menu">
-                <a href="#">Nosotros</a>
-                <a href="#">Convenios</a>
-                <a href="#">Contáctanos</a>
-                <!-- <button class="btn-login btn-signup"> <a href="#">Crear cuenta</a></button> -->
-                <button class="btn-login">
-                    <a href="./Views/Page/Login/login.php" class="btn-login">Iniciar Sesión</a>
-                </button>                
-            </div>
-        </nav>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-blue-900 text-white p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Conjunto Residencial</h1>
+    <nav class="space-x-4">
+      <a href="#inicio" class="hover:text-green-400">Inicio</a>
+      <a href="#imagenes" class="hover:text-green-400">Galería</a>
+      <a href="#reseñas" class="hover:text-green-400">Reseñas</a>
+      <a href="#info" class="hover:text-green-400">Información</a>
+      <a href="login.html" class="bg-green-500 px-4 py-2 rounded-md hover:bg-green-600">Ingresar</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="bg-gradient-to-r from-blue-900 to-green-500 text-white text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">Bienvenido a tu hogar seguro</h2>
+    <p class="text-lg">Confort, tranquilidad y comunidad en un solo lugar.</p>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="imagenes" class="max-w-6xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Galería del Conjunto</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <img src="https://www.shutterstock.com/image-photo/st-petersburg-russia-july-17-600nw-2492719799.jpg" alt="Torre" class="rounded-lg shadow-md">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/351594510.jpg?k=958243828877815e8960659ff1b6c55ce6185c9df7519a4300472151128e30ec&o=&hp=1" alt="Piscina" class="rounded-lg shadow-md">
+      <img src="https://jacsantamariadellago.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-05-at-09.10.45-edited.jpeg" alt="Salón Social" class="rounded-lg shadow-md">
+      <img src="https://www.shutterstock.com/image-photo/warsaw-july-2022-modern-residential-600nw-2176200373.jpg" alt="Parque infantil" class="rounded-lg shadow-md">
+      <img src="https://conjuntocasaspenablanca.com/wp-content/gallery/seguridad_ingreso/arreglo-puerta.jpg" alt="Entrada principal" class="rounded-lg shadow-md">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/17/e6/87/2c/bbq-conjunto-residencial.jpg" alt="Zona BBQ" class="rounded-lg shadow-md">
     </div>
+  </section>
 
-    <section class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Movilidad académica: lleva tu carrera al siguiente nivel</h1>            
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <div class="hero-stat-number">14.406</div>
-                    <div class="hero-stat-label">Estudiantes</div>
-                </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-number">15.949</div>
-                    <div class="hero-stat-label">Movilidades</div>
-                </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-number">211</div>
-                    <div class="hero-stat-label">Universidades</div>
-                </div>
-            </div>
-            <div class="hero-actions">
-                <a href="#" class="hero-action-btn">
-                    <span>🎓</span> Postúlate
-                </a>
-                <a href="#" class="hero-action-btn">
-                    <span>✏️</span> Conoce el proceso
-                </a>
-            </div>
+  <!-- RESEÑAS -->
+  <section id="reseñas" class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Reseñas de residentes</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="italic">"Vivir aquí ha sido una experiencia maravillosa, todo es muy organizado."</p>
+          <h4 class="mt-4 font-bold">– Juan Pérez</h4>
         </div>
-    </section>
-
-    <section class="convocatorias">
-        <div class="container">
-            <h2 class="convocatorias-title">Convocatorias para postularse</h2>
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar Movilidad..." class="search-input">
-                <button class="search-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </button>
-                <button class="filter-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
-                    </svg>
-                    Filtros
-                </button>
-            </div>
-            <div class="convocatorias-counter">
-                Total de convocatorias: <span>3</span>
-            </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="italic">"Me encanta la piscina y las zonas verdes, perfectas para mis hijos."</p>
+          <h4 class="mt-4 font-bold">– María García</h4>
         </div>
-    </section>
-
-    <section class="campanas">
-        <div class="container">
-            <div class="campanas-grid">
-                <!-- Tarjeta 1: Universidad de Harvard -->
-                <div class="campana-card">
-                    <div class="campana-logo-circle">
-                        <img src="./Views/Img/Harvard.png" alt="Harvard">
-                    </div>
-                    <div class="campana-badge">
-                        <span>Abierta</span>
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="12" y1="16" x2="12" y2="12"></line>
-                            <line x1="12" y1="8" x2="12" y2="8"></line>
-                        </svg>
-                    </div>
-                    <div class="campana-content">
-                        <h3>Arquitectura</h3>
-                        <p class="campana-description">Universidad de Harvard</p>                                                                 
-                        <div class="campana-buttons">
-                            <a href="#" class="campana-btn outline">Ver detalle</a>
-                            <a href="#" class="campana-btn solid">Postularse</a>
-                        </div>
-                        
-                        <div class="campana-divider"></div>
-                        
-                        <div class="campana-stats">
-                            <div class="campana-stat">
-                                <span class="stat-label">Cupos disponibles:</span>
-                                <span class="stat-value">3</span>
-                            </div>
-                            <div class="campana-stat">
-                                <span class="stat-label">Cupos totales:</span>
-                                <span class="stat-value">10</span>
-                            </div>
-                        </div>
-                        
-                        <div class="campana-footer">
-                            <div class="campana-investors">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                                <span>7 Estudiantes postulados</span>
-                            </div>
-                            <div class="campana-deadline">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg>
-                                <span>50 Días para cerrar</span>
-                            </div>
-                        </div>
-                        
-                        <div class="campana-progress-footer">
-                            <div class="campana-percentage">
-                                <span>Fecha límite de inscripción: 30/06/2025</span>
-                            </div>
-                            <div class="campana-status">
-                                <span>Abierta</span>
-                                <div class="status-active"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="campana-progress-bar"></div>
-                </div>
-                
-                <!-- Tarjeta 2: Universidad de Cambridge -->
-                <div class="campana-card">
-                    <div class="campana-logo-circle">
-                        <img src="./Views/Img/Cambridge.png" alt="Cambridge">
-                    </div>
-                    <div class="campana-badge">
-                        <span>Cerrada</span>
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="12" y1="16" x2="12" y2="12"></line>
-                            <line x1="12" y1="8" x2="12" y2="8"></line>
-                        </svg>
-                    </div>
-                    <div class="campana-content">
-                        <h3>Hotelería y Turismo</h3>
-                        <p class="campana-description">Universidad de Cambridge</p>     
-                        <div class="campana-buttons centered">
-                            <a href="#" class="campana-btn outline">Ver detalle</a>
-                        </div>
-                        
-                        <div class="campana-divider"></div>
-                        
-                        <div class="campana-stats">
-                            <div class="campana-stat">
-                                <span class="stat-label">Cupos disponibles:</span>
-                                <span class="stat-value">0</span>
-                            </div>
-                            <div class="campana-stat">
-                                <span class="stat-label">Cupos totales:</span>
-                                <span class="stat-value">12</span>
-                            </div>
-                        </div>
-                        
-                        <div class="campana-footer">
-                            <div class="campana-investors">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                                <span>12 Estudiantes postulados</span>
-                            </div>
-                            <div class="campana-deadline">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg>
-                                <span>Cerró el 29/03/2025</span>
-                            </div>
-                        </div>
-                        
-                        <div class="campana-progress-footer">
-                            <div class="campana-percentage">
-                                <span>12 Estudiantes en proceso de movilidad saliente</span>
-                            </div>
-                            <div class="campana-status">
-                                <span>Cerrada</span>
-                                <div class="status-inactive"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="campana-progress-bar"></div>
-                </div>
-                
-                <!-- Tarjeta 3: Universidad de Sídney -->
-                <div class="campana-card">
-                    <div class="campana-logo-circle sh-ma">
-                        <img src="./Views/Img/Sidney.png" alt="Sidney">
-                    </div>
-                    <div class="campana-badge proximamente">
-                        <span>Próximamente</span>
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="12 6 12 12 16 14"></polyline>
-                        </svg>
-                    </div>
-                    <div class="campana-content">
-                        <h3>Artes y Diseño</h3>
-                        <p class="campana-description">Universidad de Sídney</p>     
-                        <div class="campana-buttons centered">
-                            <a href="#" class="campana-btn outline blue">Ver detalle</a>
-                        </div>
-                        
-                        <div class="campana-countdown">
-                            <div class="countdown-header">Inicia en</div>
-                            <div class="countdown-timer">
-                                <div class="timer-unit">
-                                    <div class="timer-value">24</div>
-                                    <div class="timer-label">Días</div>
-                                </div>
-                                <div class="timer-unit">
-                                    <div class="timer-value">01</div>
-                                    <div class="timer-label">Hrs</div>
-                                </div>
-                                <div class="timer-unit">
-                                    <div class="timer-value">55</div>
-                                    <div class="timer-label">Mins</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="campana-launch-info">
-                            <p>Conócela desde ya y postúlate el:</p>
-                            <div class="launch-date">22 de Abril, 10:00 AM</div>
-                        </div>
-                    </div>
-                    <div class="campana-progress-bar blue"></div>
-                </div>
-            </div>
-            
-            <div class="campanas-counter">
-                Convocatorias: <span>3 de 3</span>
-            </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="italic">"La seguridad es excelente, siempre atentos y responsables."</p>
+          <h4 class="mt-4 font-bold">– Carlos Rodríguez</h4>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Opiniones -->
+  <!-- INFORMACIÓN -->
+  <section id="info" class="max-w-6xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Información del Conjunto</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Áreas Comunes</h3>
+        <p>Disfruta de salón social, piscina, zona BBQ, parque infantil y gimnasio totalmente equipados.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Seguridad</h3>
+        <p>Contamos con vigilancia 24/7, cámaras de seguridad y acceso controlado para visitantes.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Ubicación</h3>
+        <p>Estamos ubicados en una zona estratégica con fácil acceso a transporte público y comercios.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Administración</h3>
+        <p>Gestión transparente de recursos y comunicación constante con los residentes.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="opiniones">
-        <h2>Conoce qué opinan nuestros usuarios</h2>
-        <div class="opiniones-container">
-            <div class="opinion">
-                <div class="cita">
-                    <span class="comillas">&ldquo;</span>
-                    <p>Porque están disponibles para responder todas las preguntas que van surgiendo, la información de la página es clara.</p>
-                    <span class="calificacion">★★★★★</span>
-                </div>
-                <div class="usuario">
-                    <img src="./Views/Img/Yuliana.png" alt="Yuliana" class="foto-usuario">
-                    <p>Yuliana, Estudiante de medicina</p>
-                </div>
-            </div>
-            
-            <div class="opinion">
-                <div class="cita">
-                    <span class="comillas">&ldquo;</span>
-                    <p>Confío en ustedes porque me permiten gestionar las convocatorias de la facultad rápidamente.</p>
-                    <span class="calificacion">★★★★★</span>
-                </div>
-                <div class="usuario">
-                    <img src="./Views/Img/Francisco.png" alt="Francisco" class="foto-usuario">
-                    <p>Francisco, Administrador del área de movilidades</p>
-                </div>
-            </div>
-
-            <div class="opinion">
-                <div class="cita">
-                    <span class="comillas">&ldquo;</span>
-                    <p>Me parece que la atención que tienen con los usuarios aporta mucho valor, no solo a la operación, sino a la confianza en la plataforma y en su talento humano.</p>
-                    <span class="calificacion">★★★★★</span>
-                </div>
-                <div class="usuario">
-                    <img src="./Views/Img/Lina.png" alt="Lina" class="foto-usuario">
-                    <p>Lina, Profesional de apoyo</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <br><br><br>
-
-    <!-- Footer -->
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4><a href="#">Inicio</a></h4>
-                <ul>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Convenios</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <ul>
-                    <li><a href="">Política de tratamientos de datos</a></li>
-                    <li><a href="">Términos y condiciones</a></li>
-                    <li><a href="">Política de tratamientos de datos de Bigrado</a></li>
-                    <li><a href="">Términos y condiciones de Bigrado</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contacto</h4>
-                <p>Bogotá, Colombia</p>
-                <p>Calle 3 # 50 - 08, Piso 5</p>
-                <p>contacto@bigrado.com</p>
-            </div>
-            
-        </div>
-        <div class="footer-bottom">
-            <p>© Todos los derechos reservados</p>
-            <br>
-            <div class="social-icons">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">YouTube</a>
-                <a href="#">WhatsApp</a>
-                <a href="#">TikTok</a>
-            </div>
-        </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-white text-center py-6">
+    <p>&copy; 2025 Conjunto Residencial - Todos los derechos reservados</p>
+  </footer>
 
 </body>
 </html>
